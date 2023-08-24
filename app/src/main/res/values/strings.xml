@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Time Is Money</string>
+    <string name="time_is_money">Time Is Money</string>
+    <string name="manual_input">Manual Input</string>
+    <string name="recorded_input">Recorded Input</string>
+    <string name="submit">Submit</string>
+    <string name="a_spinner_allowing_the_user_to_choose_between_the_different_types_of_salary_they_have_stored_in_the_settings">A spinner allowing the user to choose between the different types of salary they have stored in the settings.</string>
+    <string name="enter_number_of_minutes">Enter number of minutes...</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
 </resources>
