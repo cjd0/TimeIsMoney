@@ -6,4 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayoutSettingsAnnual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutSettingsAnnual"
+        android:layout_width="432dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/LinearLayoutSettingsModify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsTitle">
+
+        <TextView
+            android:id="@+id/tvSettingsSetGHourlyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_new_hourly_wage" />
+
+        <EditText
+            android:id="@+id/etSettingSetHourly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/input_hourly_wage"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <TextView
+            android:id="@+id/tvSettingsSetAnnualSalaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alternatively_input_annual_salary_and_hours_worked_per_week" />
+
+        <EditText
+            android:id="@+id/etSettingsSetAnnualSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/input_annual_salary"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/etSettingsSetWeeklyHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/input_number_of_hours_worked_per_week"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <TextView
+            android:id="@+id/tvSettingsAnnualSalaryDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSettingsSubmitAnnualSalary"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:minHeight="48dp"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutSettingsModify"
+        android:layout_width="418dp"
+        android:layout_height="190dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearLayoutSettingsAnnual">
+
+        <TextView
+            android:id="@+id/tvSettingsModifyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_wage" />
+
+        <Spinner
+            android:id="@+id/spSettingsModify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/a_spinner_allowing_the_user_to_choose_between_the_different_types_of_salary_they_have_stored_in_the_settings"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvSettingsModifyDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSettingsModify"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/update" />
+
+            <Button
+                android:id="@+id/btnSettingsDelete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete" />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

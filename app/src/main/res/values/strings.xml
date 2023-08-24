@@ -8,4 +8,14 @@
     <string name="enter_number_of_minutes">Enter number of minutes...</string>
     <string name="record">Record</string>
     <string name="stop">Stop</string>
+    <string name="settings">Settings</string>
+    <string name="set_new_annual_salary">Set new annual salary</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="modify_wage">Modify wage</string>
+    <string name="input_number_of_hours_worked_per_week">Input number of hours worked per week...</string>
+    <string name="input_annual_salary">Input annual salary...</string>
+    <string name="alternatively_input_annual_salary_and_hours_worked_per_week">Alternatively, input annual salary and hours worked per week:</string>
+    <string name="input_hourly_wage">Input hourly wage...</string>
+    <string name="set_new_hourly_wage">Set new hourly wage:</string>
 </resources>
