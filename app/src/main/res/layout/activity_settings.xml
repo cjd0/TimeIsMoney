@@ -18,8 +18,8 @@
 
     <LinearLayout
         android:id="@+id/LinearLayoutSettingsAnnual"
-        android:layout_width="432dp"
-        android:layout_height="263dp"
+        android:layout_width="416dp"
+        android:layout_height="336dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/LinearLayoutSettingsModify"
@@ -31,6 +31,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/set_new_hourly_wage" />
+
+        <EditText
+            android:id="@+id/etSettingsSetWageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/input_name_of_hourly_annual_wage"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
 
         <EditText
             android:id="@+id/etSettingSetHourly"
@@ -88,8 +99,8 @@
 
     <LinearLayout
         android:id="@+id/LinearLayoutSettingsModify"
-        android:layout_width="418dp"
-        android:layout_height="190dp"
+        android:layout_width="413dp"
+        android:layout_height="233dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LinearLayoutSettingsAnnual">
