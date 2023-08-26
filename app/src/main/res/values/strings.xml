@@ -19,4 +19,5 @@
     <string name="input_hourly_wage">Input hourly wage...</string>
     <string name="set_new_hourly_wage">Set new hourly wage:</string>
     <string name="input_name_of_hourly_annual_wage">Input name of hourly/annual wage...</string>
+    <string name="calculate">Calculate</string>
 </resources>
