@@ -20,4 +20,7 @@
     <string name="set_new_hourly_wage">Set new hourly wage:</string>
     <string name="input_name_of_hourly_annual_wage">Input name of hourly/annual wage...</string>
     <string name="calculate">Calculate</string>
+    <string name="recorded_log_title">Recorded Log</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_stop">Stop</string>
 </resources>

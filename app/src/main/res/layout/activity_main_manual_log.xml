@@ -6,4 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainManualLog">
 
+    <TextView
+        android:id="@+id/tvManualLogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual Entry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spManualLogRateType"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/a_spinner_allowing_the_user_to_choose_between_the_different_types_of_salary_they_have_stored_in_the_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvManualLogTitle" />
+
+    <EditText
+        android:id="@+id/etManualLogTimeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Enter number in minutes..."
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spManualLogRateType" />
+
+    <TextView
+        android:id="@+id/tvManualLogDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etManualLogTimeInput" />
+
+    <Button
+        android:id="@+id/btnManualLogSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvManualLogDisplay"
+        app:layout_constraintVertical_bias="0.075" />
 </androidx.constraintlayout.widget.ConstraintLayout>

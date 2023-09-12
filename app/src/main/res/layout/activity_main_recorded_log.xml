@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainRecordedLog">
 
+
+    <TextView
+        android:id="@+id/tvRecordedLogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recorded_log_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spRecordedLogRateType"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/a_spinner_allowing_the_user_to_choose_between_the_different_types_of_salary_they_have_stored_in_the_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecordedLogTitle" />
+
+    <Button
+        android:id="@+id/btnRecordedLogPlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btn_play"
+        app:layout_constraintEnd_toStartOf="@id/btnRecordedLogStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spRecordedLogRateType" />
+
+    <Button
+        android:id="@+id/btnRecordedLogStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/btn_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRecordedLogPlayPause"
+        app:layout_constraintTop_toBottomOf="@+id/spRecordedLogRateType" />
+
+    <TextView
+        android:id="@+id/tvRecordedLogDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecordedLogPlayPause"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
